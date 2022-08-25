@@ -1,0 +1,27 @@
+.card {
+    border: none;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(148, 182, 53);
+    background: linear-gradient(90deg, rgb(89, 153, 52) 0%, rgb(182, 207, 121) 100%);
+}
+
+.card h1, h4 {
+    color: white;
+}
+
+label {
+    color: white;
+    font-size: larger;
+}
+
+.form-text {
+    color: white;
+    font-size: medium;
+}
