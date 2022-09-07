@@ -1,38 +1,47 @@
 {
-  "name": "team-bug-busters-frontend",
-  "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
-  },
-  "private": true,
-  "dependencies": {
-    "@angular/animations": "^14.1.0",
-    "@angular/common": "^14.1.0",
-    "@angular/compiler": "^14.1.0",
-    "@angular/core": "^14.1.0",
-    "@angular/forms": "^14.1.0",
-    "@angular/platform-browser": "^14.1.0",
-    "@angular/platform-browser-dynamic": "^14.1.0",
-    "@angular/router": "^14.1.0",
-    "rxjs": "~7.5.0",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "^14.1.3",
-    "@angular/cli": "~14.1.3",
-    "@angular/compiler-cli": "^14.1.0",
-    "@types/jasmine": "~4.0.0",
-    "jasmine-core": "~4.2.0",
-    "karma": "~6.4.0",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage": "~2.2.0",
-    "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.0.0",
-    "typescript": "~4.7.2"
-  }
+	"name": "@szmarczak/http-timer",
+	"version": "1.1.2",
+	"description": "Timings for HTTP requests",
+	"main": "source",
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"test": "xo && nyc ava",
+		"coveralls": "nyc report --reporter=text-lcov | coveralls"
+	},
+	"files": [
+		"source"
+	],
+	"keywords": [
+		"http",
+		"https",
+		"timer",
+		"timings"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/szmarczak/http-timer.git"
+	},
+	"author": "Szymon Marczak",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/szmarczak/http-timer/issues"
+	},
+	"homepage": "https://github.com/szmarczak/http-timer#readme",
+	"xo": {
+		"rules": {
+			"unicorn/filename-case": "camelCase"
+		}
+	},
+	"devDependencies": {
+		"ava": "^0.25.0",
+		"coveralls": "^3.0.2",
+		"p-event": "^2.1.0",
+		"nyc": "^12.0.2",
+		"xo": "^0.22.0"
+	},
+	"dependencies": {
+		"defer-to-connect": "^1.0.1"
+	}
 }

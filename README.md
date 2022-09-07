@@ -1,27 +1,70 @@
-# TeamBugBustersFrontend
+# http-timer
+> Timings for HTTP requests
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
+[![Build Status](https://travis-ci.org/szmarczak/http-timer.svg?branch=master)](https://travis-ci.org/szmarczak/http-timer)
+[![Coverage Status](https://coveralls.io/repos/github/szmarczak/http-timer/badge.svg?branch=master)](https://coveralls.io/github/szmarczak/http-timer?branch=master)
+[![install size](https://packagephobia.now.sh/badge?p=@szmarczak/http-timer)](https://packagephobia.now.sh/result?p=@szmarczak/http-timer)
 
-## Development server
+Inspired by the [`request` package](https://github.com/request/request).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Usage
+```js
+'use strict';
+const https = require('https');
+const timer = require('@szmarczak/http-timer');
 
-## Code scaffolding
+const request = https.get('https://httpbin.org/anything');
+const timings = timer(request);
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+request.on('response', response => {
+	response.on('data', () => {}); // Consume the data somehow
+	response.on('end', () => {
+		console.log(timings);
+	});
+});
 
-## Build
+// { start: 1535708511443,
+//   socket: 1535708511444,
+//   lookup: 1535708511444,
+//   connect: 1535708511582,
+//   upload: 1535708511887,
+//   response: 1535708512037,
+//   end: 1535708512040,
+//   phases:
+//    { wait: 1,
+//      dns: 0,
+//      tcp: 138,
+//      request: 305,
+//      firstByte: 150,
+//      download: 3,
+//      total: 597 } }
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## API
 
-## Running unit tests
+### timer(request)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Returns: `Object`
 
-## Running end-to-end tests
+- `start` - Time when the request started.
+- `socket` - Time when a socket was assigned to the request.
+- `lookup` - Time when the DNS lookup finished.
+- `connect` - Time when the socket successfully connected.
+- `upload` - Time when the request finished uploading.
+- `response` - Time when the request fired the `response` event.
+- `end` - Time when the response fired the `end` event.
+- `error` - Time when the request fired the `error` event.
+- `phases`
+	- `wait` - `timings.socket - timings.start`
+	- `dns` - `timings.lookup - timings.socket`
+	- `tcp` - `timings.connect - timings.lookup`
+	- `request` - `timings.upload - timings.connect`
+	- `firstByte` - `timings.response - timings.upload`
+	- `download` - `timings.end - timings.response`
+	- `total` - `timings.end - timings.start` or `timings.error - timings.start`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+**Note**: The time is a `number` representing the milliseconds elapsed since the UNIX epoch.
 
-## Further help
+## License
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+MIT
