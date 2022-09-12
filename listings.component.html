@@ -1,0 +1,15 @@
+<div class="pets">
+    <h2>
+        Pets:
+    </h2>
+    <ul>
+        <li *ngFor="let pet of pets">
+            <p>
+                {{pet.id + 1}}. {{pet.name}}: {{pet.species}} {{pet.age}} {{pet.description}}   
+            </p>
+            <div class="img">
+                <img [src]="pet.image"/> 
+            </div>
+        </li>
+    </ul>
+</div>
