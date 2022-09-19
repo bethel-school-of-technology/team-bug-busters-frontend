@@ -14,7 +14,7 @@
       "id": 0,
       "name": "Coco",
       "species": "Dog",
-      "age": "2 years",
+      "age": "8 months",
       "description": "A cute puppy who loves treats and likes to play",
       "image": "https://as1.ftcdn.net/v2/jpg/01/39/53/06/1000_F_139530684_DrTr8JdBE1WHdyuKnwm3p1twTv1Hdtfg.jpg"
     },
@@ -23,7 +23,7 @@
       "name": "Tina",
       "species": "Dog",
       "age": "4 years",
-      "description": "Tina is an adorable labador and pitbull mix. She loves playing and water and eating treats!",
+      "description": "Tina is an adorable labador and pitbull mix. She loves playing in water and eating treats!",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5NtP33NYv-M3fn43vPRjf6R-UhsMKecJEvA&usqp=CAU"
     },
     {

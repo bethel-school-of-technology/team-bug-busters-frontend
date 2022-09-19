@@ -1,0 +1,27 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   .browserslistrc
+#
+# Untracked files:
+#	.editorconfig
+#	.gitignore
+#	.vscode/
+#	README.md
+#	angular.json
+#	db.json
+#	images/
+#	karma.conf.js
+#	package-lock.json
+#	package.json
+#	src/
+#	tsconfig.app.json
+#	tsconfig.json
+#	tsconfig.spec.json
+#
