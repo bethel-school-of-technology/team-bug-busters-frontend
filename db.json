@@ -1,0 +1,94 @@
+{
+  "signupUsers": [
+    {
+      "firstName": "Simone",
+      "lastName": "Allen",
+      "phoneNumber": 5552223333,
+      "email": "sunshine@gmail.com",
+      "password": "password",
+      "id": 1
+    }
+  ],
+  "pets": [
+    {
+      "id": 0,
+      "name": "Coco",
+      "species": "Dog",
+      "age": "8 months",
+      "description": "A cute puppy who loves treats and likes to play",
+      "image": "https://as1.ftcdn.net/v2/jpg/01/39/53/06/1000_F_139530684_DrTr8JdBE1WHdyuKnwm3p1twTv1Hdtfg.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Tina",
+      "species": "Dog",
+      "age": "4 years",
+      "description": "Tina is an adorable labador and pitbull mix. She loves playing in water and eating treats!",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5NtP33NYv-M3fn43vPRjf6R-UhsMKecJEvA&usqp=CAU"
+    },
+    {
+      "id": 2,
+      "name": "Perry",
+      "species": "Ferrett",
+      "age": "3 years",
+      "description": "Perry is one of the most sweetest animals you could ever know, he loves to cuddle!",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg8ZhtfmrVbx04DsjJh7u6k3i7IC954pXxVw&usqp=CAU"
+    },
+    {
+      "id": 3,
+      "name": "Wilbur",
+      "species": "Pig",
+      "age": "6 months",
+      "description": "Wilbur was born on a farm he is as precious as a jewel.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqpZYjUss1Yg0ibP5h9X5OSgPK9kxyWMtyrw&usqp=CAU"
+    },
+    {
+      "id": 4,
+      "name": "Betsy",
+      "species": "Snake",
+      "age": "5 years",
+      "description": "Betsy is a boa-constrictor who is quiet and to herself. Her favorite food is mice.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT1kISnTzZffFc5cU0UJMNgKtnC_2I5VPLJA&usqp=CAU"
+    },
+    {
+      "id": 5,
+      "name": "Jinx",
+      "species": "Cat",
+      "age": "3 years",
+      "description": "Jinx is a Savannah cat her fur is soft and she enjoys treats.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv-rJCPwl4DjSzTKL6x4gZcTqSLinH2-nneg&usqp=CAU"
+    },
+    {
+      "id": 6,
+      "name": "Squirt",
+      "species": "Turtle",
+      "age": "1 year",
+      "description": "Squirt loves to chill at the beach and dig himself in the sand.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzVaUyC-SMliyyYp725XEICBiD-SYCR7WisQ&usqp=CAU"
+    },
+    {
+      "id": 7,
+      "name": "Mable",
+      "species": "Horse",
+      "age": "6 years",
+      "description": "Mable loves morning runs and getting brushes.",
+      "image": "https://www.westend61.de/images/0001507332pw/spotted-horse-trotting-through-tall-green-grassy-field-CAVF91799.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Pokey",
+      "species": "Porkupine",
+      "age": "1 year",
+      "description": "Pokey is a little prickly on the outside, but he is a sweet pet to have.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNXN6iF6MdrYRsqZPQrS3Rs2x9RdWni4Au-Q&usqp=CAU"
+    },
+    {
+      "id": 9,
+      "name": "Dallas",
+      "species": "Horse",
+      "age": "6 years",
+      "description": "Dallas is a racing horse, off the race track he loves to eat apples and being petted.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQkuDg2eHOgTYWkRa_olJwKXlZoGp9d3gUIg&usqp=CAU"
+    }
+  ]
+}
