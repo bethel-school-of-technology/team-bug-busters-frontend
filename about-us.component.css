@@ -1,0 +1,14 @@
+*{
+    background-color: bisque;
+    display: block;
+}
+img {
+    display: flow-root;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 100%;
+}
+div {
+  background-color: bisque;
+}

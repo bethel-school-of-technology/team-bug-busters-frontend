@@ -1,16 +1,11 @@
 * {
-    margin: auto;
-    padding: 0%;
-    box-sizing: border-box;
-    font-size: large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: bisque;
+    text-align: center;
+    color: black;
 }
 
-.image-grid {
-    width: 900px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    align-items: center;
+.card {
+    padding-left: 5em;
+    border-color: crimson;
+    border-style: double;
 }

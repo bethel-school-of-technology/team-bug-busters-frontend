@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
+
 import { ListingsComponent } from '../listings/listings.component';
 
 
@@ -10,7 +11,7 @@ import { ListingsComponent } from '../listings/listings.component';
   declarations: [ListingsComponent],
   imports: [
     CommonModule, 
-    HttpClientModule
+    HttpClientModule,
   ],
   exports: [ListingsComponent]
 })

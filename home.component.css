@@ -1,20 +1,15 @@
-nav {
-    margin: auto;
-    padding: 0%;
-    box-sizing: border-box;
-    font-size: large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    justify-content: space-between;
+* {
+  background-color: bisque; 
 }
 
 
+h3{
+  text-align: center;
+}
 
-.links {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .login {
-    margin-left: 20px;
-  }
+#carousel-item {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+

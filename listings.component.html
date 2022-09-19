@@ -1,15 +1,79 @@
 <div class="pets">
-    <h2>
-        Pets:
-    </h2>
-    <ul>
-        <li *ngFor="let pet of pets">
-            <p>
-                {{pet.id + 1}}. {{pet.name}}: {{pet.species}} {{pet.age}} {{pet.description}}   
-            </p>
-            <div class="container">
-                <img [src]="pet.image"/> 
-            </div>
-        </li>
-    </ul>
+
+    <div class="container-fluid">
+      <h2>Pet Information</h2>
+ 
+        <button class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#petModal">Add Pet</button>
+
+    </div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="petModal" tabindex="-1" aria-labelledby="petModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="petModalLabel">Pet Information</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form formGroup= "petForm">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control"  placeholder="name" formControlName="name">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Species</label>
+            <input type="text" class="form-control"  placeholder="species" formControlName="species">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Age</label>
+            <input type="text" class="form-control"  placeholder="Age" formControlName="age">
+          </div>
+
+          <div class="mb-3">
+            <label  class="form-label">Description</label>
+            <textarea class="form-control" rows="3"></textarea>
+          </div>
+          
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupFile01">Upload Picture</label>
+            <input type="file" class="form-control" id="inputGroupFile01">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Add Pet</button>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="card mb-3" style="max-width: 540px;" *ngFor="let pet of pets">
+    <div class="row g-0">
+      <div class="col-md-4">
+        
+        <img [src]="pet.image" class="img-fluid rounded-start" alt="...">
+      
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h3 class="card-title">
+            {{pet.name}}</h3>
+          <p class="card-text">
+            {{pet.species}} <br>
+            {{pet.age}} <br>
+            {{pet.description}}
+          </p>
+          <!-- <button type="button" class="btn-outline-warning" routerLink="/pets/{{pet.id}}" routerLinkActive="active">View
+          </button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+

@@ -1,15 +1,21 @@
+html {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBRCwC6G1QCrIcEdjXLBXwSjNnS-KzEOnWDQ&usqp=CAU');
+}
 .card {
     border: none;
     width: 500px;
+    height: 650px;
     padding: 40px;
-    position: absolute;
+    position: fixed;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     top: 50%;
     left: 50%;
+    margin-top: 10px;
+    margin-bottom: auto;
     transform: translate(-50%, -50%);
-    background: rgb(148, 182, 53);
-    background: linear-gradient(90deg, rgb(89, 153, 52) 0%, rgb(182, 207, 121) 100%);
+    background: rgb(153, 122, 19);
+    background: linear-gradient(90deg, rgba(238, 184, 8, 0.774) 0%, rgb(226, 191, 77) 100%);
 }
 
 .card h1, h4 {
