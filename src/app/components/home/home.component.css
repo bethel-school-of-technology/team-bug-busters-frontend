@@ -1,0 +1,15 @@
+* {
+  background-color: bisque; 
+}
+
+
+h3{
+  text-align: center;
+}
+
+#carousel-item {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+

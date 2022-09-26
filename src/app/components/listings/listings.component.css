@@ -1,0 +1,11 @@
+* {
+    background-color: bisque;
+    text-align: center;
+    color: black;
+}
+
+.card {
+    padding-left: 5em;
+    border-color: crimson;
+    border-style: double;
+}
